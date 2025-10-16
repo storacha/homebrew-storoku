@@ -5,11 +5,11 @@
 class Storoku < Formula
   desc ""
   homepage ""
-  version "0.4.5"
+  version "0.4.6"
 
   on_macos do
-    url "https://github.com/storacha/storoku/releases/download/v0.4.5/storoku_0.4.5_mac_os_all.zip"
-    sha256 "ee807acd8e6eef630c6051807cf9081c32ae583b67159270dce747ca9bed7f89"
+    url "https://github.com/storacha/storoku/releases/download/v0.4.6/storoku_0.4.6_mac_os_all.zip"
+    sha256 "35ed4e0bbe3bef480cfd20a032baad25da9a297c3a38d6cf2d887032bdaf3562"
 
     def install
       bin.install "storoku"
@@ -18,15 +18,15 @@ class Storoku < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/storacha/storoku/releases/download/v0.4.5/storoku_0.4.5_linux_amd64.tar.gz"
-      sha256 "f453a105bbc827c228c857ee7688dfc2b7bceb9859c5a5754f24ea5c2fee3cbf"
+      url "https://github.com/storacha/storoku/releases/download/v0.4.6/storoku_0.4.6_linux_amd64.tar.gz"
+      sha256 "9100094364d417baa393d0cb7ef42a39af1fee2ea18eda3036530c83304e2220"
       def install
         bin.install "storoku"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/storacha/storoku/releases/download/v0.4.5/storoku_0.4.5_linux_arm64.tar.gz"
-      sha256 "29bbbd751625e5086b06cde6815ecccdf73f7dbd9f0139ce9d3df2e25f04750f"
+      url "https://github.com/storacha/storoku/releases/download/v0.4.6/storoku_0.4.6_linux_arm64.tar.gz"
+      sha256 "771da0080617b887bf2482ffc766fb6cf2e92390f727a8f5e358b8d4270f5ce7"
       def install
         bin.install "storoku"
       end
